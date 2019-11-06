@@ -176,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: TimesNewRoman-368, "Times New Roman", Times, Baskerville, Georgia, serif;
     color: #{{ site.data.template.color.primary }};
 }
 
@@ -257,7 +257,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #2B6123;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -349,24 +349,24 @@ section h3.section-subheading {
     }
 }
 
-.service-heading {
+.condition-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#service .service-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#service .service-item .service-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#service .service-item .service-link .service-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -378,11 +378,11 @@ section h3.section-subheading {
     background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#service .service-item .service-link .service-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#service .service-item .service-link .service-hover .service-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -393,16 +393,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#service .service-item .service-link .service-hover .service-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#service .service-item .service-link .service-hover .service-hover-content h3,
+#service .service-item .service-link .service-hover .service-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#service .service-item .service-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -410,24 +410,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#service .service-item .service-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#service .service-item .service-caption p {
     margin: 0;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-style: italic;
 }
 
-#portfolio * {
+#service * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #service .service-item {
         margin: 0 0 30px;
     }
 }
@@ -865,3 +865,17 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
