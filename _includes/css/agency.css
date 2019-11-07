@@ -432,6 +432,10 @@ section h3.section-subheading {
     }
 }
 
+.condition-detail>ul>li {
+    color: #{{ site.data.template.color.muted }};
+}
+
 .timeline {
     position: relative;
     padding: 0;
