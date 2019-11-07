@@ -210,7 +210,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: {{ site.data.template.font.primary }};
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #333;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -257,7 +257,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #2B6123;
+        background-color: #fff;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -871,11 +871,11 @@ body {
     padding-bottom:56.25%;
     position:relative;
     height:0;
-    }
-    .map-container iframe{
+}
+.map-container iframe{
     left:0;
     top:0;
     height:100%;
     width:100%;
     position:absolute;
-    }
+}
